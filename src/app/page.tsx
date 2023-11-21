@@ -1,6 +1,5 @@
-import Image from 'next/image'
-import { ChevronDoubleDownIcon } from '@heroicons/react/20/solid' 
-
+import { ChevronDoubleDownIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,9 +9,13 @@ export default function Home() {
         <div className='block text-center border border-red-500 mt-48'>
           <h2>Welcome, my name is Santiago</h2>
           <h3>Click below to continue</h3>
-          <button className='w-16  border border-red-500'><ChevronDoubleDownIcon className='text-light' /></button>
+          <Link href='/about'>
+            <button className='w-16 border border-red-500'>
+              <ChevronDoubleDownIcon className='text-light' />
+            </button>
+          </Link>
         </div>
-      </main>
+      </main >
     </>
   )
 }
