@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
+import { montserrat } from './font'
 
 export const metadata: Metadata = {
-  title: 'SJCrippa Web Developer',
+  title: 'S.J. Crippa Web Developer',
   description: 'Porfolio from Santiago Julian Crippa, web developer.',
 }
 
@@ -16,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${montserrat.className} antialiased bg-dark text-light max-w-screen-xl border border-red-500 mx-auto`}>
         {children}
       </body>
     </html>
