@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased bg-dark text-light max-w-screen-xl border border-red-500 mx-auto`}>
+      <body className={`${montserrat.className} antialiased bg-dark text-light max-w-screen-xl border border-yellow-500 mx-auto`}>
         {children}
       </body>
     </html>
