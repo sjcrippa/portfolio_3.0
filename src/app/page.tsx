@@ -8,7 +8,7 @@ export default function Home() {
         <h1 className='text-xl'>Hero section</h1>
         <div className='block text-center border border-red-500 mt-48'>
           <h2>Welcome, my name is Santiago</h2>
-          <h3>Click below to continue</h3>
+          <h3>Click below to continue, la puta que te pario</h3>
           <Link href='/about'>
             <button className='w-16 border border-red-500'>
               <ChevronDoubleDownIcon className='text-light' />
