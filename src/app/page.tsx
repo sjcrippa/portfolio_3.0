@@ -9,7 +9,6 @@ export default function Home() {
         <div className='block text-center border border-red-500 mt-48'>
           <h2>Welcome, my name is Santiago</h2>
           <h3>Click below to continue, la puta que te pario</h3>
-          <h4>Caca ca ca</h4>
           <Link href='/about'>
             <button className='w-16 border border-red-500'>
               <ChevronDoubleDownIcon className='text-light' />
