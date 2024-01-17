@@ -5,7 +5,7 @@ import { Navbar } from '@/components/navbar/bar/Navbar'
 
 export const metadata: Metadata = {
   title: 'S.J. Crippa Web Developer',
-  description: 'Porfolio from Santiago Julian Crippa, web developer.',
+  description: 'S.J. Crippa Web Developer portfolio.',
 }
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} antialiased bg-dark text-light max-w-screen-xl border border-yellow-500 mx-auto`}>
+      <body className={`${montserrat.className} antialiased bg-dark text-light max-w-screen-lg border border-yellow-500 mx-auto`}>
         <Navbar />
         {children}
       </body>

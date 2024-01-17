@@ -2,10 +2,10 @@ import Link from "next/link"
 
 import { Items } from "./navitems.types"
 
-export const NavItems = () => {
+export default function NavItems() {
 
   const items: Items[] = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/"},
     { name: "Works", path: "/works" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" }
@@ -13,12 +13,14 @@ export const NavItems = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center gap-3 text-light border">
-        {items.map(item => (
-          <ul key={item.name}>
-            <Link href={item.path} className="text-sm">{item.name}</Link>
-          </ul>
-        ))}
+      <div className="w-full text-light">
+        <ul className="h-full flex justify-end gap-3 items-center">
+          {items.map(item => (
+            <li key={item.name}>
+              <Link href={item.path} className="text-sm">{item.name}</Link>
+            </li>
+          ))}
+        </ul>
       </div>
     </>
   )

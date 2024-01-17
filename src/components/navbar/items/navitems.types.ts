@@ -1,6 +1,6 @@
 export interface Items {
   name: string;
   path: string;
-  active?: string;
+  active?: boolean;
   subitem?: [];
 };

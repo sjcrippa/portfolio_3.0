@@ -1,14 +1,18 @@
 import Image from "next/image"
 
-import { NavItems } from "../items/NavItems"
+import NavItems from "../items/NavItems"
+import logo from '/public/images/logo.png'
+import Link from "next/link"
 
 export const Navbar = () => {
   return (
     <>
-      <nav className="w-full flex">
-        <h1>
-          <div className="bg-red-500 rounded-full w-6 h-6"></div>
-        </h1>
+      <nav className="w-full flex py-4">
+        <div className="w-full flex justify-between">
+          <Link href={'/'}>
+            <Image src={logo} alt="Logo image" width={70} height={70} />
+          </Link>
+        </div>
         <NavItems />
       </nav>
     </>
