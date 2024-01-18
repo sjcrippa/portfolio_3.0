@@ -10,7 +10,8 @@ export const Navbar = () => {
       <nav className="w-full flex py-4">
         <div className="w-full flex justify-between">
           <Link href={'/'}>
-            <Image src={logo} alt="Logo image" width={70} height={70} />
+            <p className="text-xl text-light">LOGO</p>
+            {/* <Image src={logo} alt="Logo image" width={70} height={70} /> */}
           </Link>
         </div>
         <NavItems />
