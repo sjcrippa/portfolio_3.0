@@ -1,3 +1,4 @@
+import Banner from "@/components/banner/Banner";
 import Hero from "@/components/hero/Hero";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <>
       <main className='w-full p-2'>
         <Hero />
+        <Banner />
       </main >
     </>
   )
