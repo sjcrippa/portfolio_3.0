@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ArrowDownIcon } from "@heroicons/react/20/solid";
 
 import profile from "public/images/profile.png"
 import GitHubIcon from "@/assets/svg/GitHub";
 import LinkedInIcon from "@/assets/svg/LinkedIn";
-import '../../app/globals.css'
 import ContactMe from "../buttons/ContactMe";
-import { ArrowDownIcon } from "@heroicons/react/20/solid";
+import '../../app/globals.css'
 
 export default function Hero() {
   return (
@@ -19,7 +19,6 @@ export default function Hero() {
         </section>
 
         <div className="flex gap-36 items-center mt-10">
-
           <article className="h-full text-xl">
             <h2>Welcome! 👋</h2>
             <h3 className="mt-3">My name is Santiago, and i&apos;m a</h3>
@@ -40,14 +39,14 @@ export default function Hero() {
               <Image className="rounded-full " src={profile} alt="profile pic" width={200} />
             </div>
           </section>
-
         </div>
 
         <section className="absolute bottom-10">
           <p className='flex gap-2 home-name text-lg w-full font-bold tracking-wider text-center '>LEARN MORE
-            <ArrowDownIcon width={25} color="#962dd4" className="animate-pulse"/>
+            <ArrowDownIcon width={25} color="#962dd4" className="animate-pulse" />
           </p>
         </section>
+        
       </main>
     </>
   )
