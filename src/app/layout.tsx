@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.css'
+import '../styles/globals.css'
 import { montserrat } from './font'
 import { Navbar } from '@/components/navbar/bar/Navbar'
 

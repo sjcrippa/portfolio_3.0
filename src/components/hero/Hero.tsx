@@ -14,7 +14,7 @@ export default function Hero() {
       <main className="-mt-16 w-full h-screen flex items-center justify-center">
 
         <section className="absolute top-24">
-          <h1 className='home-name text-4xl w-full font-bold tracking-wider text-center '>S.J. CRIPPA</h1>
+          <h1 className='home-name text-4xl w-full font-bold tracking-wider text-center '>Front End Developer</h1>
           <div className="rounded-xl bg-gradient-to-r from-[#4717f6] to-[#962dd4]  h-0.5 animate-pulse transition-color ease-linear"></div>
         </section>
 

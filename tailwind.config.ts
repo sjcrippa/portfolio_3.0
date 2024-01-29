@@ -29,8 +29,10 @@ const config = {
         },
       },
       colors: {
-        light: "#fffff",
-        dark: "212121",
+        light: "#E5E3DC",
+        dark: "#0E0B16",
+        primary: "#4717F6",
+        secondary: "#A239CA"
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
