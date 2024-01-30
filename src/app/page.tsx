@@ -1,15 +1,9 @@
-import Banner from "@/components/banner/Banner";
-import Hero from "@/components/hero/Hero";
-import Works from "@/components/works/Works";
+import React from 'react'
 
 export default function Home() {
   return (
-    <>
-      <main className='w-full p-2'>
-        <Hero />
-        <Banner />
-        <Works />
-      </main >
-    </>
-  )
+      <main>
+        Home
+      </main>
+    )
 }
