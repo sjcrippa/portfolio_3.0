@@ -7,7 +7,7 @@ import profile from "/public/profile.png"
 import ContactMeBtn from "./buttons/ContactMeBtn";
 import DownloadCvBtn from "./buttons/DownloadCvBtn";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub, FaGithubSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function Hero() {
   return (
