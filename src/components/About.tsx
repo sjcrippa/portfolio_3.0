@@ -1,7 +1,9 @@
 import React from 'react'
 
+import SectionHeading from './ui/SectionHeading'
+
 export default function About() {
   return (
-    <div>About</div>
+    <SectionHeading>About Me</SectionHeading>
   )
 }

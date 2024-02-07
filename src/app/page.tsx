@@ -1,9 +1,9 @@
 import React from 'react'
 
 import Hero from '@/components/Hero'
-import SectionDivider from '@/components/dividers/SectionDivider'
+import SectionDivider from '@/components/ui/SectionDivider'
 import About from '@/components/About'
-import Projects from '@/components/Projects'
+import Projects from '@/components/projects/Projects'
 
 export default function Home() {
   return (

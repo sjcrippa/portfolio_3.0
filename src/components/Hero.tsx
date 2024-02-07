@@ -4,8 +4,8 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import profile from "/public/profile.png"
-import ContactMeBtn from "./buttons/ContactMeBtn";
-import DownloadCvBtn from "./buttons/DownloadCvBtn";
+import ContactMeBtn from "./ui/buttons/ContactMeBtn";
+import DownloadCvBtn from "./ui/buttons/DownloadCvBtn";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
