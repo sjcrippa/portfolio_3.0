@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Navbar from "./Navbar";
 
 export default function Header() {
+
   return (
     <header className='z-[999] relative'>
       <motion.div
@@ -11,11 +12,10 @@ export default function Header() {
 
         initial={{ y: -100, x: '-50%', opacity: 0 }}
         animate={{ y: 0, x: '-50%', opacity: 1 }}
-
       ></motion.div>
 
       <Navbar />
-      
+
     </header>
   )
 }
