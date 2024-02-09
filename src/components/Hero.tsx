@@ -2,16 +2,33 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
+import { BsLinkedin } from "react-icons/bs";
+import { FaGithub } from "react-icons/fa";
 
 import profile from "/public/profile.png"
 import ContactMeBtn from "./ui/buttons/ContactMeBtn";
 import DownloadCvBtn from "./ui/buttons/DownloadCvBtn";
-import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 export default function Hero() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  })
+  const { setActiveSection } = useActiveSectionContext()
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection('Home')
+    }
+  }, [inView, setActiveSection])
+
   return (
-    <section id="home" className="max-w-[50rem] text-center sm:mb-0 scroll-mt-96">
+    <section
+      ref={ref}
+      id="home"
+      className="max-w-[50rem] text-center sm:mb-0 scroll-mt-96">
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
