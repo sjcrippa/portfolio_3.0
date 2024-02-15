@@ -68,7 +68,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <h1 className="mb-4 sm:mb-8">Welcome!</h1>{" "}
+        <h1 className="mb-4 sm:mb-8">Welcome!!</h1>{" "}
         <p>
           <span>My name is <strong>Santiago Crippa</strong> and</span> {" "}
           <span>I'm a <strong>Front-End Developer</strong> with 2 years of experience.</span>{" "}
