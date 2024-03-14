@@ -1,24 +1,14 @@
 'use client'
 
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer'
+import React from 'react'
 import Image from 'next/image'
 
-import SectionHeading from './ui/SectionHeading'
-import { useActiveSectionContext } from '@/context/ActiveSectionContext'
 import webDev from '/public/webDev.png'
+import SectionHeading from './ui/SectionHeading'
+import { useSectionInView } from '@/lib/hooks'
 
 export default function About() {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  })
-  const { setActiveSection, timeOfLastClick } = useActiveSectionContext()
-
-  useEffect(() => {
-    if (inView && Date.now() - timeOfLastClick > 1000) {
-      setActiveSection('About')
-    }
-  }, [inView, setActiveSection, timeOfLastClick])
+  const { ref } = useSectionInView('About')
 
   return (
     <section

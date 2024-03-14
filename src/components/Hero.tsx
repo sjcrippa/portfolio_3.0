@@ -11,7 +11,7 @@ import DownloadCvBtn from "./ui/buttons/DownloadCvBtn";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
-  const { ref } = useSectionInView('Home')
+  const { ref } = useSectionInView('Home', 0.5)
 
   return (
     <section
