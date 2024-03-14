@@ -7,6 +7,7 @@ import type { SectionName } from '@/lib/types'
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode
 }
+
 type ActiveSectionContextType = {
   activeSection: SectionName
   setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>
