@@ -2,27 +2,16 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 
 import profile from "/public/profile.png"
 import ContactMeBtn from "./ui/buttons/ContactMeBtn";
 import DownloadCvBtn from "./ui/buttons/DownloadCvBtn";
-import { useActiveSectionContext } from "@/context/ActiveSectionContext";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function Hero() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  })
-  const { setActiveSection } = useActiveSectionContext()
-
-  useEffect(() => {
-    if (inView) {
-      setActiveSection('Home')
-    }
-  }, [inView, setActiveSection])
+  const { ref } = useSectionInView('Home')
 
   return (
     <section
