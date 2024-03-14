@@ -2,9 +2,11 @@
 
 import React, { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
+import Image from 'next/image'
 
 import SectionHeading from './ui/SectionHeading'
 import { useActiveSectionContext } from '@/context/ActiveSectionContext'
+import webDev from '/public/webDev.png'
 
 export default function About() {
   const { ref, inView } = useInView({
@@ -22,10 +24,11 @@ export default function About() {
     <section
       id='about'
       ref={ref}
-      className='scroll-mt-24'>
+      className='scroll-mt-24 max-w-xl'>
       <SectionHeading>About Me</SectionHeading>
-      <div className='text-center'>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum earum unde quam nihil ullam cum molestias voluptas non assumenda ducimus dolore cumque modi temporibus autem, consequuntur natus quo ad corrupti quisquam. Labore quae natus vero provident sequi voluptate corrupti cupiditate temporibus quasi at laboriosam excepturi, ipsa ratione animi distinctio neque?</p>
+      <div className='grid grid-cols-1 text-center lg:grid lg:grid-cols-2'>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, laudantium exercitationem maxime quibusdam fuga voluptatibus eum tempore veniam et a, provident neque error! Eveniet repudiandae reprehenderit nulla qui perspiciatis iste, laborum, vero tempore dolore dicta veritatis, nemo sunt cumque eius dolores exercitationem libero at deleniti commodi omnis pariatur eaque facere magni! Iure, alias quis debitis, repellat id qui explicabo vero, et deleniti laboriosam asperiores dolorum. Culpa tempora veritatis eveniet ipsam, et voluptas dolore. Laboriosam, officia expedita cumque ipsa, doloribus laborum aperiam, cupiditate ut ducimus eos voluptatibus rem. Velit quo dolores adipisci sunt beatae consequatur id repellat, sequi molestiae error reiciendis?</p>
+        <Image className='mx-auto' src={webDev} alt='web developer illustration' />
       </div>
     </section>
   )
