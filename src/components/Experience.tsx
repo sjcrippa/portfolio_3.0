@@ -16,7 +16,7 @@ export default function Experience() {
     <section
       id='experience'
       ref={ref}
-      className='scroll-mt-28'
+      className='scroll-mt-28 mb-28'
     >
       <SectionHeading>My experience</SectionHeading>
 

@@ -2,6 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+
 import pacorabanne from "/public/pacorabanne.png";
 import paisanos from "/public/paisanos.png";
 import weatherapp from "/public/weatherapp.png";
