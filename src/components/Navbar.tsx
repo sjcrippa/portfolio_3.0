@@ -21,7 +21,7 @@ export default function Navbar() {
 
             <Link
               className={clsx("flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition", {
-                "text-gray-950": activeSection === link.name
+                "text-gray-950 font-semibold": activeSection === link.name
               })}
               href={link.hash}
               onClick={() => {
@@ -34,7 +34,7 @@ export default function Navbar() {
               {
                 link.name === activeSection && (
                   <motion.span
-                    className="bg-gray-100 rounded-full absolute inset-0 -z-10"
+                    className="bg-gray-200 rounded-full absolute inset-0 -z-10"
                     layoutId="activeSection"
                     transition={{
                       type: 'spring',
