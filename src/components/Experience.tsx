@@ -40,7 +40,7 @@ export default function Experience() {
                   borderRight: '0.4rem solid #E5E3DC'
                 }}
                 date={item.date}
-                dateClassName='text-light !font-semibold'
+                dateClassName='text-dark md:text-light !font-semibold'
                 icon={item.icon}
                 iconStyle={{
                   background: '#E5E3DC',
@@ -49,7 +49,7 @@ export default function Experience() {
                 }}
               >
                 <h3 className='font-bold !capitalize'>{item.title}</h3>
-                <p className='!mt-0'>{item.location}</p>
+                <p className='!mt-0 !font-semibold italic'>{item.location}</p>
                 <p className='!font-normal !mt-1'>{item.description}</p>
               </VerticalTimelineElement>
             </React.Fragment>
