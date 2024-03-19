@@ -6,6 +6,7 @@ import { NextUiProvider } from './provider'
 
 import './globals.css'
 import { Toaster } from 'react-hot-toast'
+import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -30,6 +31,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Toaster position='top-right' />
+            <Footer />
           </ActiveSectionContextProvider>
         </NextUiProvider>
 

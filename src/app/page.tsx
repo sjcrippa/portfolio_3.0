@@ -13,13 +13,13 @@ export default function Home() {
     <main className='flex flex-col items-center px-4'>
       <Hero />
       <SectionDivider />
-      <About />
-      <SectionDivider />
       <Projects />
+      <SectionDivider />
+      <Experience />
       <SectionDivider />
       <Skills />
       <SectionDivider />
-      <Experience />
+      <About />
       <Contact />
     </main>
   )
