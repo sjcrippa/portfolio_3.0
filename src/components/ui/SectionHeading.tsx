@@ -11,10 +11,10 @@ export default function SectionHeading({ children }: SectionHeadingProps) {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
-        delay: 1
+        delay: 0.5
       }}
     >
-      <h2 className='text-center text-3xl font-medium capitalize mb-8'>{children}</h2>
+      <h2 className='text-center text-3xl font-medium uppercase mb-8'>{children}</h2>
     </motion.div>
   )
 }

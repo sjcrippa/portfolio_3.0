@@ -2,7 +2,7 @@ import { Montserrat } from 'next/font/google'
 
 import Header from '@/components/Header'
 import ActiveSectionContextProvider from '@/context/ActiveSectionContext'
-import { NextUiProvider } from './nextprovider'
+import { NextUiProvider } from './provider'
 
 import './globals.css'
 
