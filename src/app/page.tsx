@@ -8,7 +8,7 @@ import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
 import Contact from '@/components/Contact'
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <main className='flex flex-col items-center px-4'>
       <Hero />
