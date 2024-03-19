@@ -5,6 +5,7 @@ import ActiveSectionContextProvider from '@/context/ActiveSectionContext'
 import { NextUiProvider } from './provider'
 
 import './globals.css'
+import { Toaster } from 'react-hot-toast'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -28,6 +29,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Toaster position='top-right' />
           </ActiveSectionContextProvider>
         </NextUiProvider>
 

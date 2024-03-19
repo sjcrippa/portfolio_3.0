@@ -1,10 +1,10 @@
 'use client'
 
 import React from 'react'
-import { Button } from '@nextui-org/react'
-import { FaPaperPlane } from 'react-icons/fa'
+import toast from 'react-hot-toast'
 import { motion } from 'framer-motion'
 
+import SubmitBtn from './ui/buttons/SubmitBtn'
 import SectionHeading from './ui/SectionHeading'
 import { useSectionInView } from '@/lib/hooks'
 import { sendEmail } from '@/actions/send-email'
@@ -38,7 +38,12 @@ export default function Contact() {
       </p>
       <form
         action={async (formData) => {
-          await sendEmail(formData)
+          const { error } = await sendEmail(formData)
+          if (error){
+            toast.error(error)
+            return
+          }
+          toast.success('Email sent successfully!')
         }}
         className='mt-10 flex flex-col text-dark'>
         <input
@@ -49,14 +54,12 @@ export default function Contact() {
           maxLength={50}
           className='px-3 h-14 rounded-lg bg-light outline-none ' />
         <textarea
-          name='userMessage'
+          name='message'
           placeholder='Your message'
           required
           maxLength={1000}
           className='h-52 my-3 rounded-lg p-3 resize-none bg-light outline-none'></textarea>
-        <Button type='submit' className='bg-light text-dark rounded-xl text-base md:text-lg font-semibold outline-none'>
-          Submit <FaPaperPlane />
-        </Button>
+        <SubmitBtn />
       </form>
     </motion.section>
   )
