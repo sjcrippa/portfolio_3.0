@@ -17,7 +17,7 @@ export default function Hero() {
     <section
       ref={ref}
       id="home"
-      className="max-w-[50rem] text-center sm:mb-0 scroll-mt-96">
+      className="max-w-[50rem] z-10 text-center sm:mb-0 scroll-mt-96">
       <div className="flex justify-center items-center">
         <div className="relative">
           <motion.div
