@@ -6,6 +6,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import pacorabanne from "/public/pacorabanne.png";
 import paisanos from "/public/paisanos.png";
 import weatherapp from "/public/weatherapp.png";
+import animevault from '/public/animevault.png'
 
 export const links = [
   {
@@ -86,6 +87,13 @@ export const projectsData = [
     imageUrl: weatherapp,
     siteUrl: 'https://weather-app-scrippa.netlify.app/'
   },
+  {
+    title: 'Anime Vault',
+    description: 'An infinite scrolling website for showing multiple anime cards with animations and stunning visuals.',
+    tags: ['Next Js', 'TypeScript', 'Server Actions', 'Next Ui', 'Framer Motion', 'Tailwind'],
+    imageUrl: animevault,
+    siteUrl: 'https://vault-anime-sjcrippa.vercel.app/'
+  }
 ] as const;
 
 export const skillsData = [

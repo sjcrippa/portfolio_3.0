@@ -16,7 +16,6 @@ export default function LandingPage() {
       <Projects />
       <SectionDivider />
       <Experience />
-      <SectionDivider />
       <Skills />
       <SectionDivider />
       <About />
