@@ -14,10 +14,8 @@ export default function LandingPage() {
       <Hero />
       <SectionDivider />
       <Projects />
-      <SectionDivider />
       <Experience />
       <Skills />
-      <SectionDivider />
       <About />
       <Contact />
     </main>

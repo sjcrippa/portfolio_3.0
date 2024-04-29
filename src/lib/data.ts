@@ -4,9 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 import pacorabanne from "/public/pacorabanne.png";
-import paisanos from "/public/paisanos.png";
+import nfpaisanos from "/public/nfpaisanos.png";
 import weatherapp from "/public/weatherapp.png";
 import animevault from '/public/animevault.png'
+import iphone from '/public/iphone.png'
 
 export const links = [
   {
@@ -64,28 +65,11 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Paco Rabanne",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: pacorabanne,
-    siteUrl: 'https://paco-sjc-ecommerce.vercel.app/'
-  },
-  {
-    title: "Paisanos",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: paisanos,
-    siteUrl: 'https://nfpaisanos-challenge.vercel.app/'
-  },
-  {
-    title: "Weather App",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: weatherapp,
-    siteUrl: 'https://weather-app-scrippa.netlify.app/'
+    title: 'iPhone 15 replica',
+    description: 'Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. From custom animations to animated 3D models.',
+    tags: ['Next Js', 'TypeScript', 'Server Actions', 'GSAP', 'Three Js', 'Tailwind'],
+    imageUrl: iphone,
+    siteUrl: 'https://apples-clone.vercel.app/'
   },
   {
     title: 'Anime Vault',
@@ -93,6 +77,30 @@ export const projectsData = [
     tags: ['Next Js', 'TypeScript', 'Server Actions', 'Next Ui', 'Framer Motion', 'Tailwind'],
     imageUrl: animevault,
     siteUrl: 'https://vault-anime-sjcrippa.vercel.app/'
+  },
+  {
+    title: "Paisanos",
+    description:
+      "Single page application developed as an NFT viewing and bidding site, categorizing different NFTs by price and type. ",
+    tags: ["React", "TypeScript", "Next Js", "Tailwind", "Framer Motion"],
+    imageUrl: nfpaisanos,
+    siteUrl: 'https://nfpaisanos-challenge.vercel.app/'
+  },
+  {
+    title: "Paco Rabanne",
+    description:
+      "E-commerce site made as a final project for the React Js Developer course. Where data fetching, contexts, data persistence, state changes and CRUD fundamentals are applied.",
+    tags: ["React", "Tailwind", "API", "CRUD"],
+    imageUrl: pacorabanne,
+    siteUrl: 'https://paco-sjc-ecommerce.vercel.app/'
+  },
+  {
+    title: "Weather App",
+    description:
+      "Climate information site, which consumes data from the Open Weather API and renders it in a clean and friendly interface.",
+    tags: ["HTML", "CSS", "JavaScript", "API"],
+    imageUrl: weatherapp,
+    siteUrl: 'https://weather-app-scrippa.netlify.app/'
   }
 ] as const;
 
