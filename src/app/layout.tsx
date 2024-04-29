@@ -11,7 +11,7 @@ import Footer from '@/components/Footer'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'SJ.Crippa | Personal Portfolio',
+  title: 'Santiago J. Crippa | Portfolio',
   description: 'Santiago Julian Crippa, front-end developer with 2 years of experience.',
 }
 
